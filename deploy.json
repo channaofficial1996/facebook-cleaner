@@ -1,0 +1,11 @@
+{
+  "build": {
+    "env": {
+      "FB_UID": "xxxx",
+      "FB_PASS": "xxxx",
+      "FB_2FA_SECRET": "xxxx"
+    },
+    "command": "npm install"
+  },
+  "start": "node app.js"
+}
