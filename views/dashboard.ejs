@@ -1,1 +1,11 @@
-
+<h2>📄 បញ្ជី Page</h2>
+<ul>
+  <% pages.forEach(page => { %>
+    <li>
+      <form method="POST" action="/comments">
+        <input type="hidden" name="pageId" value="<%= page.id %>">
+        <button type="submit"><%= page.name %></button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
