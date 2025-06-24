@@ -1,0 +1,5 @@
+[build]
+nixPackages = ["chromium"]
+
+[start]
+cmd = "node app.js"
