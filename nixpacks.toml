@@ -1,11 +1,9 @@
 [phases.setup]
 nixpkgsArchive = "https://github.com/NixOS/nixpkgs/archive/22.11.tar.gz"
+nixpkgsPackages = ["chromium", "fontconfig", "freetype", "nss"]
 
 [phases.install]
 cmds = ["npm install"]
-
-[phases.build]
-cmds = []
 
 [start]
 cmd = "node app.js"
